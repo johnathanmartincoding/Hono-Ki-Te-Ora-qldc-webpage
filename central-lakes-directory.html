@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community Directory | Hono Ki Te Ora</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="b2fbe41d7eb8060f.css">
+<style>
+/* Only what the site stylesheet doesn't cover: keeps the Leaflet map working alongside Tailwind's reset */
+.leaflet-container img.leaflet-tile,.leaflet-container .leaflet-marker-icon,.leaflet-container .leaflet-marker-shadow{max-width:none!important;max-height:none!important}
+.leaflet-container{font:inherit}
+#map{position:relative;z-index:0;isolation:isolate}
+</style>
+</head>
+<body class="flex flex-col min-h-screen">
+<div class="bg-red-700 text-white text-sm py-2 px-4"><div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-center">
+  <span class="font-semibold">In an emergency call 111</span><span class="hidden sm:inline text-red-300">|</span>
+  <a href="tel:08004678462" class="hover:underline font-medium">Mental Health Crisis: 0800 467 846</a><span class="hidden sm:inline text-red-300">|</span>
+  <a href="tel:1737" class="hover:underline font-medium">Call or text 1737</a></div></div>
+<header class="relative bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between h-24 py-2">
+    <a class="flex items-center group" aria-label="Hono Ki Te Ora, an ADL Service" href="https://www.hkto.org.nz/"><img alt="Hono Ki Te Ora, an ADL Service" class="h-20 w-auto" src="logos/hkto-logo.webp"></a>
+    <nav class="hidden md:flex items-center gap-1">
+      <a class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-600 hover:text-[#4A6E9A] hover:bg-blue-50" href="https://www.hkto.org.nz/">Home</a>
+      <a class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-600 hover:text-[#4A6E9A] hover:bg-blue-50" href="https://www.hkto.org.nz/about">About</a>
+      <a class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-600 hover:text-[#4A6E9A] hover:bg-blue-50" href="https://www.hkto.org.nz/how-it-works">How It Works</a>
+      <a class="px-3 py-2 rounded-lg text-sm font-medium transition-colors bg-[#4A6E9A] text-white" href="#/">Directory</a>
+      <a class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-600 hover:text-[#4A6E9A] hover:bg-blue-50" href="https://www.hkto.org.nz/for-referrers">For Referrers</a>
+      <a class="px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-600 hover:text-[#4A6E9A] hover:bg-blue-50" href="https://www.hkto.org.nz/contact">Contact</a>
+      <a class="ml-2 px-4 py-2 bg-[#4A6E9A] hover:bg-[#3d5c82] text-white text-sm font-semibold rounded-lg transition-colors" href="https://www.hkto.org.nz/referral">Make a Referral</a>
+    </nav>
+    <button id="mb" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button>
+  </div>
+  <div id="mm" class="hidden md:hidden border-t border-slate-100 py-3 space-y-1">
+    <a class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50" href="https://www.hkto.org.nz/">Home</a>
+    <a class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50" href="https://www.hkto.org.nz/about">About</a>
+    <a class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50" href="https://www.hkto.org.nz/how-it-works">How It Works</a>
+    <a class="block px-3 py-2 rounded-lg text-sm font-medium bg-[#4A6E9A] text-white" href="#/">Directory</a>
+    <a class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50" href="https://www.hkto.org.nz/for-referrers">For Referrers</a>
+    <a class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50" href="https://www.hkto.org.nz/contact">Contact</a>
+  </div>
+</div></header>
+<main class="flex-1">
+  <section class="relative h-64 sm:h-80 flex items-end bg-gradient-to-b from-[#4A6E9A] to-[#17263a]"><div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+    <p id="eb" class="text-sky-300 text-sm font-medium uppercase tracking-widest mb-1"></p>
+    <h1 id="bt" class="text-3xl sm:text-4xl font-bold text-white"></h1>
+    <p id="bs" class="text-white/80 mt-2 max-w-2xl"></p>
+  </div></section>
+  <div id="app"></div>
+</main>
+<footer class="bg-[#17263a] text-white">
+  <div class="bg-red-800 px-4 py-4"><div class="max-w-6xl mx-auto text-center"><p class="font-semibold text-sm sm:text-base">In crisis? Call <a href="tel:111" class="underline font-bold">111</a> for emergencies &nbsp;|&nbsp; Mental Health Crisis: <a href="tel:08004678462" class="underline font-bold">0800 467 846</a></p></div></div>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12"><div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div><div class="flex items-center gap-3 mb-4"><img alt="ADL" class="h-20 w-auto" src="logos/adl-landscape-reversed.webp"></div>
+      <h2 class="text-xl font-bold mb-1">Community Directory</h2><p class="text-slate-400 text-sm italic mb-3">Connecting to wellbeing</p>
+      <p class="text-slate-300 text-sm leading-relaxed">A guide to support for young people and their whānau across the Central Lakes. Listings are a guide only. Please check each service's website for current details.</p></div>
+    <div><h3 class="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">Navigate</h3><ul class="space-y-2">
+      <li><a class="text-slate-300 hover:text-white text-sm transition-colors" href="https://www.hkto.org.nz/about">About Hono Ki Te Ora</a></li>
+      <li><a class="text-slate-300 hover:text-white text-sm transition-colors" href="https://www.hkto.org.nz/how-it-works">How It Works</a></li>
+      <li><a class="text-slate-300 hover:text-white text-sm transition-colors" href="https://www.hkto.org.nz/for-referrers">For Referrers</a></li>
+      <li><a class="text-slate-300 hover:text-white text-sm transition-colors" href="https://www.hkto.org.nz/contact">Get in Touch</a></li></ul></div>
+    <div><h3 class="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">Directory</h3><ul class="space-y-2">
+      <li><a class="text-slate-300 hover:text-white text-sm transition-colors" href="#/">Map</a></li>
+      <li><a class="text-slate-300 hover:text-white text-sm transition-colors" href="#/resources">Community Resources</a></li>
+      <li><a class="text-slate-300 hover:text-white text-sm transition-colors" href="#/helplines">Helplines</a></li></ul></div>
+  </div></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+let D; const app = document.getElementById("app"); let map = null;
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const locName = id => D.locations.find(l => l.id === id)?.name || id;
+const count = id => D.services.filter(s => s.location === id).length;
+const hero = (eyebrow, t, sub = "") => { eb.textContent = eyebrow; bt.textContent = t; bs.textContent = sub; document.title = t + " | Hono Ki Te Ora Community Directory"; };
+const sec = (inner, bg = "bg-white") => `<section class="py-12 ${bg}"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">${inner}</div></section>`;
+const PIN = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+const TABS = [["#/", "Map", "home"], ["#/resources", "Community Resources", "resources"], ["#/helplines", "Helplines", "helplines"]];
+const tabs = a => `<div class="flex flex-wrap gap-2 mb-8">${TABS.map(t => `<a href="${t[0]}" class="px-4 py-2 rounded-lg text-sm font-medium transition-colors ${t[2] === a ? "bg-[#4A6E9A] text-white" : "bg-slate-100 text-slate-600 hover:text-[#4A6E9A] hover:bg-blue-50"}">${t[1]}</a>`).join("")}</div>`;
+const back = '<div class="mb-6"><a href="#/" class="inline-flex items-center gap-2 text-[#4A6E9A] font-semibold hover:gap-3 transition-all">&larr; Back to map</a></div>';
+const CHIP_ON = "px-4 py-2 rounded-full border border-[#4A6E9A] bg-[#4A6E9A] text-white text-sm font-medium cursor-pointer";
+const CHIP_OFF = "px-4 py-2 rounded-full border border-slate-300 text-slate-600 text-sm font-medium hover:bg-slate-50 cursor-pointer";
+
+const card = (s, showLoc) => `<div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col">
+  <div class="flex flex-wrap gap-2 mb-3"><span class="px-3 py-1 rounded-full bg-[#4A6E9A]/10 text-[#4A6E9A] text-xs font-semibold">${esc(s.category)}</span>${showLoc && s.location ? `<span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">${esc(locName(s.location))}</span>` : ""}</div>
+  <h3 class="text-lg font-bold text-slate-900 mb-2">${esc(s.name)}</h3>
+  <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">${esc(s.description)}</p>
+  <div>${s.website ? `<a class="inline-flex items-center gap-2 px-4 py-2 bg-[#4A6E9A] hover:bg-[#3d5c82] text-white text-sm font-semibold rounded-lg transition-colors" href="${esc(s.website)}" target="_blank" rel="noopener">Visit Website</a>` : ""}</div></div>`;
+
+function list(items, showLoc, withFilters) {
+  const cats = D.categories.filter(c => items.some(s => s.category === c));
+  let cat = "", q = "";
+  const html = () => {
+    const out = items.filter(s => (!cat || s.category === cat) && (!q || (s.name + " " + s.description).toLowerCase().includes(q)));
+    results.innerHTML = out.length ? out.map(s => card(s, showLoc)).join("") : '<p class="text-slate-600">Nothing matches that search.</p>';
+    document.querySelectorAll("#chips button").forEach(b => b.className = b.dataset.c === cat ? CHIP_ON : CHIP_OFF);
+  };
+  return { init() {
+    if (!withFilters) return html();
+    document.getElementById("q").oninput = e => { q = e.target.value.toLowerCase(); html(); };
+    document.querySelectorAll("#chips button").forEach(b => b.onclick = () => { cat = b.dataset.c; html(); });
+    html();
+  }, filters: (ph) => `<input type="search" id="q" placeholder="${ph}" class="w-full max-w-md px-4 py-3 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#4A6E9A] focus:border-transparent">
+    <div id="chips" class="flex flex-wrap gap-2 my-6"><button data-c="" class="${CHIP_ON}">All</button>${cats.map(c => `<button data-c="${esc(c)}" class="${CHIP_OFF}">${esc(c)}</button>`).join("")}</div>` };
+}
+const grid = '<div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>';
+
+function home() {
+  hero("Community directory", "Find support in the Central Lakes", "Choose a location to see local services for young people and their whānau.");
+  app.innerHTML = sec(tabs("home") + `<div id="map" class="h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl mb-8"></div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">${D.locations.map(l => `<a href="#/l/${l.id}" class="group block p-6 rounded-2xl bg-slate-50 hover:bg-[#eef2f8] transition-colors border border-slate-100"><div class="inline-flex p-3 bg-[#4A6E9A]/10 text-[#4A6E9A] rounded-xl mb-4">${PIN}</div><h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-[#4A6E9A]">${esc(l.name)}</h3><p class="text-slate-600 text-sm">${count(l.id)} services</p></a>`).join("")}</div>`)
+  + sec(`<h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Browse by category</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">${D.categories.map(c => `<a href="#/c/${encodeURIComponent(c)}" class="block p-5 rounded-xl bg-white border border-slate-200 hover:border-[#4A6E9A] transition-colors"><h3 class="font-bold text-slate-900">${esc(c)}</h3><p class="text-slate-500 text-sm mt-1">${D.services.filter(s => s.category === c).length} services</p></a>`).join("")}</div>`, "bg-[#f8f6f2]");
+  if (!window.L) { document.getElementById("map").innerHTML = '<p class="p-6 text-slate-500">The map needs an internet connection. Use the location boxes below instead.</p>'; return; }
+  map = L.map("map", { scrollWheelZoom: false });
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 15, attribution: "&copy; OpenStreetMap contributors" }).addTo(map);
+  map.fitBounds(D.locations.map(l => [l.lat, l.lng]), { padding: [50, 50] });
+  D.locations.forEach(l => L.marker([l.lat, l.lng], { title: l.name }).addTo(map)
+    .bindTooltip(`${l.name} (${count(l.id)})`, { permanent: true, direction: "top", offset: [-15, -18] })
+    .on("click", () => location.hash = "#/l/" + l.id));
+}
+
+function location_(id) {
+  hero("Central Lakes", locName(id), count(id) + " services");
+  const L_ = list(D.services.filter(s => s.location === id), false, true);
+  app.innerHTML = sec(back + L_.filters("Search services") + grid);
+  L_.init();
+}
+
+function category_(c) {
+  hero("Category", c, "Services across all four locations");
+  app.innerHTML = sec(back + grid);
+  list(D.services.filter(s => s.category === c), true, false).init();
+}
+
+function resources() {
+  hero("Community directory", "Community Resources", "Websites and online services anyone in the region can use.");
+  const L_ = list(D.resources.map(r => ({ ...r, location: "" })), false, true);
+  app.innerHTML = sec(tabs("resources") + L_.filters("Search resources") + grid);
+  L_.init();
+}
+
+function helplines() {
+  hero("Need help now?", "Helplines", "Free and confidential. If someone is in immediate danger, call 111.");
+  const one = h => `<div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm"><h3 class="text-lg font-bold text-slate-900 mb-1">${esc(h.name)}</h3><p class="text-2xl font-bold text-[#4A6E9A]">${esc(h.number)}</p>${h.note ? `<p class="text-slate-600 text-sm mt-2">${esc(h.note)}</p>` : ""}</div>`;
+  app.innerHTML = sec(tabs("helplines") + `<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="p-6 rounded-2xl bg-red-50 border border-red-200"><h3 class="text-lg font-bold text-red-700 mb-1">Emergency</h3><p class="text-3xl font-bold text-red-700"><a href="tel:111">111</a></p><p class="text-slate-600 text-sm mt-2">Police, fire and ambulance.</p></div>
+    ${D.helplines.map(one).join("")}</div>`);
+}
+
+function route() {
+  if (map) { map.remove(); map = null; }
+  const [, r, arg] = location.hash.split("/");
+  window.scrollTo(0, 0);
+  if (r === "l" && D.locations.some(l => l.id === arg)) location_(arg);
+  else if (r === "c") category_(decodeURIComponent(arg || ""));
+  else if (r === "resources") resources();
+  else if (r === "helplines") helplines();
+  else home();
+}
+document.getElementById("mb").onclick = () => document.getElementById("mm").classList.toggle("hidden");
+// Data lives in data.json. Use ?data=other.json to try a different file without touching this page.
+const src = new URLSearchParams(location.search).get("data") || "data.json";
+fetch(src).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(d => { D = d; addEventListener("hashchange", route); route(); })
+  .catch(err => { hero("Community directory", "Couldn't load the directory"); app.innerHTML = sec(`<div class="p-6 rounded-2xl bg-amber-50 border border-amber-200"><h3 class="text-lg font-bold text-slate-900 mb-2">Couldn't load ${esc(src)}</h3><p class="text-slate-700 text-sm">Open this page with <b>python serve.py</b> rather than double-clicking it, and make sure ${esc(src)} is in the same folder. (${esc(err.message)})</p></div>`); });
+</script>
+</body>
+</html>

@@ -1,0 +1,869 @@
+{
+ "locations": [
+  {
+   "id": "wanaka",
+   "name": "Wānaka",
+   "lat": -44.7032,
+   "lng": 169.1321
+  },
+  {
+   "id": "queenstown",
+   "name": "Queenstown",
+   "lat": -45.0312,
+   "lng": 168.6626
+  },
+  {
+   "id": "cromwell",
+   "name": "Cromwell",
+   "lat": -45.0397,
+   "lng": 169.2004
+  },
+  {
+   "id": "alexandra",
+   "name": "Alexandra",
+   "lat": -45.249,
+   "lng": 169.38
+  }
+ ],
+ "categories": [
+  "Mental Health",
+  "Youth Support",
+  "Family Support",
+  "Education & Learning",
+  "Neurodiversity Support",
+  "Health & Wellbeing",
+  "Bereavement & Grief",
+  "Community Resources"
+ ],
+ "services": [
+  {
+   "name": "Able Minds - EduConnect",
+   "location": "wanaka",
+   "category": "Education & Learning",
+   "description": "EduConnect is an attendance service to help tamariki and rangatahi find their way back to learning. We support ākonga aged 5–16 through trauma-informed, identity-affirming outreach and tailored casework.",
+   "website": "https://www.able.org.nz/educonnect"
+  },
+  {
+   "name": "Presbyterian Support Buddy Programme",
+   "location": "wanaka",
+   "category": "Family Support",
+   "description": "This programme contributes to the emotional and social wellbeing of children by matching them with carefully selected and trained adult volunteers in a well-supported mentoring relationship.",
+   "website": "https://psotago.org.nz/services/families/buddy-programme/"
+  },
+  {
+   "name": "Seasons for Growth",
+   "location": "wanaka",
+   "category": "Mental Health",
+   "description": "Child Programme: Builds knowledge and skills to strengthen the emotional wellbeing and resilience of children and young people following experiences of significant change and loss",
+   "website": "https://www.seasonsforgrowth.org.uk/"
+  },
+  {
+   "name": "ICAMHS",
+   "location": "wanaka",
+   "category": "Mental Health",
+   "description": "Assessment and treatment service for infants, children and adolescents experiencing moderate to severe mental health challenges.",
+   "website": "https://healthpoint.co.nz/public/psychiatry/child-and-youth-mental-health-services-southern/"
+  },
+  {
+   "name": "Central Lakes Family Services - Child & Youth Services",
+   "location": "wanaka",
+   "category": "Family Support",
+   "description": "We aim to support tamariki and their whānau with warmth, empathy and evidence-based practice to empower positive change. What we offer tamariki aged 5-12: Support with home, school or community challenges. Parent & whānau support.",
+   "website": "https://www.clfs.co.nz/child-youth-services/tamariki-5-12-years/"
+  },
+  {
+   "name": "Able Minds",
+   "location": "wanaka",
+   "category": "Community Resources",
+   "description": "This programme is specifically designed for rangatahi (youth) aged from 12 -21 years who are affected by mental distress and/or addiction issues, or for young people who need general life coaching.",
+   "website": "https://www.able.org.nz/rangatahi-and-wellbeing-raw"
+  },
+  {
+   "name": "Kahu Youth Trust",
+   "location": "wanaka",
+   "category": "Youth Support",
+   "description": "Youth development programmes, mentoring, youth clubs, after school drop-in sessions",
+   "website": "https://www.kahuyouth.org"
+  },
+  {
+   "name": "ADL / Thrive",
+   "location": "wanaka",
+   "category": "Mental Health",
+   "description": "Thrive te pae ora is a fully funded professional counselling service provided by ADL Limited, for young people (rangatahi) aged 12 to 24 and their family (whānau) living in the lower South Island.",
+   "website": "https://www.thriveservices.org.nz/"
+  },
+  {
+   "name": "Mint Charitable Trust",
+   "location": "wanaka",
+   "category": "Community Resources",
+   "description": "We are dedicated to empowering individuals with intellectual disability and supporting their families through transformative programmes.",
+   "website": "https://www.minttrust.nz/about"
+  },
+  {
+   "name": "Te Whatu Ora Community Mental Health Services",
+   "location": "wanaka",
+   "category": "Mental Health",
+   "description": "Adult Mental Health Team (CLCMHT); Child, Adolescent, Family Mental Health Service (CAFMHS); Specialist Addiction Service (SAS)",
+   "website": "https://healthpoint.co.nz/public/psychiatry/adult-community-mental-health-services-southern/"
+  },
+  {
+   "name": "Anglican Family Care",
+   "location": "wanaka",
+   "category": "Family Support",
+   "description": "Family Start Programme: The Family Start programme offers free, voluntary home visits to support expecting parents and those with pēpi and tamariki (up to 12 months old).",
+   "website": "https://AnglicanFamilyCare.org.nz"
+  },
+  {
+   "name": "Central Lakes Family Services - Mental Health Services",
+   "location": "wanaka",
+   "category": "Family Support",
+   "description": "Supporting a loved one as they are navigating mental health distress can come with its own challenges. Carers and whānau often experience burn-out and caring fatigue which can then become a mental health challenge of their own.",
+   "website": "https://www.clfs.co.nz/mental-health/mental-health/"
+  },
+  {
+   "name": "Family Works",
+   "location": "wanaka",
+   "category": "Family Support",
+   "description": "Our services include: Social work; Financial mentoring; Parenting support; Children’s programmes; Youth development; Foodbank; Emergency welfare response",
+   "website": "https://psotago.org.nz/contact/family-works/"
+  },
+  {
+   "name": "Strengthening Families",
+   "location": "wanaka",
+   "category": "Family Support",
+   "description": "The Strengthening Families process connects a whānau or family who require assistance from more than one agency or community service.",
+   "website": "https://www.strengtheningfamilies.govt.nz/"
+  },
+  {
+   "name": "Precious Beginnings",
+   "location": "wanaka",
+   "category": "Family Support",
+   "description": "Precious Beginnings Wānaka welcomes parents and caregivers of babies aged approximately 5 months and under to join our 10 week programme.",
+   "website": "https://www.preciousbeginnings.org.nz/"
+  },
+  {
+   "name": "Explore Hāpainga Ora",
+   "location": "wanaka",
+   "category": "Neurodiversity Support",
+   "description": "A local charitable trust offering activities and support that help neurodiverse young people build confidence, skills and connection. For young people and whānau in the Upper Clutha, [ADL to confirm cost].",
+   "website": "https://explorewellbeing.org.nz/"
+  },
+  {
+   "name": "Dyslexia Support South",
+   "location": "wanaka",
+   "category": "Neurodiversity Support",
+   "description": "Supporting parents and caregivers of children with specific learning differences",
+   "website": "https://www.dyslexiasupportsouth.org.nz/"
+  },
+  {
+   "name": "Narcotics Anonymous",
+   "location": "wanaka",
+   "category": "Mental Health",
+   "description": "A free peer support group for anyone wanting to stop using drugs, based on shared experience rather than professional treatment. Open to anyone, meetings held locally, free.",
+   "website": "https://wanakaapp.nz/Info/narcotics-anonymous/6887f57ea1b5ba002e0321d0"
+  },
+  {
+   "name": "Community Link Wanaka",
+   "location": "wanaka",
+   "category": "Community Resources",
+   "description": "One-stop community support and connection centre. Heartlands Service centre, providing a gateway for the community to access free information and support from government agencies like MSD, WINZ, IRD; financial advisors; legal aid; and social work services.",
+   "website": "https://www.communitylink.nz/"
+  },
+  {
+   "name": "ArtSenta",
+   "location": "wanaka",
+   "category": "Health & Wellbeing",
+   "description": "Wellbeing through creativity and community - creative wellbeing art sessions",
+   "website": "https://www.artsenta.org"
+  },
+  {
+   "name": "ICAMHS",
+   "location": "queenstown",
+   "category": "Mental Health",
+   "description": "Assessment and treatment service for infants, children and adolescents experiencing moderate to severe mental health challenges.",
+   "website": "https://healthpoint.co.nz/public/psychiatry/child-and-youth-mental-health-services-southern/"
+  },
+  {
+   "name": "Central Lakes Family Services",
+   "location": "queenstown",
+   "category": "Family Support",
+   "description": "Immediate support for domestic and family violence, sexual harm, and mental health. Also offers various support programs",
+   "website": "https://www.clfs.co.nz/"
+  },
+  {
+   "name": "Pivotal Point",
+   "location": "queenstown",
+   "category": "Neurodiversity Support",
+   "description": "Neurodiversity service: Empowering whānau to access the help required to holistically support all our tamariki.",
+   "website": "https://pivotalpoint.org.nz/"
+  },
+  {
+   "name": "Leap into Literacy",
+   "location": "queenstown",
+   "category": "Education & Learning",
+   "description": "Online reading comprehension and creative writing workshops",
+   "website": "https://www.leapintoliteracy.com/"
+  },
+  {
+   "name": "Awhi Atu Counsellors in Schools",
+   "location": "queenstown",
+   "category": "Mental Health",
+   "description": "A free counselling programme placing trained counsellors in local schools to support students' wellbeing. For enrolled students, referred through the school, free.",
+   "website": "https://www.coreap.org.nz/schools"
+  },
+  {
+   "name": "Seasons for Growth",
+   "location": "queenstown",
+   "category": "Mental Health",
+   "description": "Child Programme: Builds knowledge and skills to strengthen the emotional wellbeing and resilience of children and young people following experiences of significant change and loss",
+   "website": "https://www.seasonsforgrowth.org.uk/"
+  },
+  {
+   "name": "Te Whatu Ora EPS",
+   "location": "queenstown",
+   "category": "Mental Health",
+   "description": "Urgent assessment and intervention for mental health crisis",
+   "website": "https://healthpoint.co.nz/public/psychiatry/mental-health-emergency-services-southern/"
+  },
+  {
+   "name": "Te Whatu Ora Specialist Addiction Service (SAS)",
+   "location": "queenstown",
+   "category": "Mental Health",
+   "description": "Offers a range of support for individuals dealing with substance use issues",
+   "website": "https://healthpoint.co.nz/public/psychiatry/alcohol-and-drug-services-southern"
+  },
+  {
+   "name": "Whakatipu Youth Trust",
+   "location": "queenstown",
+   "category": "Youth Support",
+   "description": "Providing resources, opportunities, challenges, trusted relationships and safe environments to empower our youth to live positive and healthy lives in their community.",
+   "website": "https://whakatipuyouthtrust.org.nz/"
+  },
+  {
+   "name": "Happiness House",
+   "location": "queenstown",
+   "category": "Community Resources",
+   "description": "Opening their doors to the Queenstown community since 1991, providing a safe, warm, non-judgmental, confidential and caring space for anyone in the community",
+   "website": "https://happinesshouse.org.nz/"
+  },
+  {
+   "name": "Central Otago REAP",
+   "location": "queenstown",
+   "category": "Education & Learning",
+   "description": "Facilitates educational opportunities that aim to empower and enrich the lives of the people in Central Otago.",
+   "website": "https://www.coreap.org.nz/"
+  },
+  {
+   "name": "Able Minds",
+   "location": "queenstown",
+   "category": "Mental Health",
+   "description": "A charitable trust and mental health organisation that delivers services to those adversely affected by mental distress and / or addiction challenges including the support of their whānau.",
+   "website": "https://www.able.org.nz/"
+  },
+  {
+   "name": "Mana Tahuna",
+   "location": "queenstown",
+   "category": "Community Resources",
+   "description": "We are a kaupapa Māori Charitable Trust committed to and leading positive systemic change for the community and the Taiao.",
+   "website": "https://www.manatahuna.co.nz/"
+  },
+  {
+   "name": "Dyslexia Support South",
+   "location": "queenstown",
+   "category": "Neurodiversity Support",
+   "description": "Supporting parents and caregivers of children with specific learning differences",
+   "website": "https://www.dyslexiasupportsouth.org.nz/"
+  },
+  {
+   "name": "Lives in the Balance",
+   "location": "queenstown",
+   "category": "Education & Learning",
+   "description": "Lives in the Balance is a dynamic, values-driven 501(c)(3) non-profit organization devoted to ensuring that all kids are understood and treated in ways that are compassionate, effective, non-punitive, non-adversarial, proactive, and collaborative.",
+   "website": "https://livesinthebalance.org/"
+  },
+  {
+   "name": "Strengthening Families",
+   "location": "queenstown",
+   "category": "Family Support",
+   "description": "The Strengthening Families process connects a whānau or family who require assistance from more than one agency or community service.",
+   "website": "https://www.strengtheningfamilies.govt.nz/"
+  },
+  {
+   "name": "Work and Income",
+   "location": "queenstown",
+   "category": "Community Resources",
+   "description": "Get help finding work, see current job vacancies, and find out how we can support you if you're on a low income or unemployed.",
+   "website": "https://www.workandincome.govt.nz"
+  },
+  {
+   "name": "Uruuruwhenua Hauora",
+   "location": "cromwell",
+   "category": "Community Resources",
+   "description": "We work alongside whānau and the wider community to ensure Health and Social Services are accessible and tailored to meet the needs of whānau so that good health and wellbeing is achieved.",
+   "website": "https://www.uruuruwhenuahealth.co.nz"
+  },
+  {
+   "name": "Awhi Atu Counsellors in Schools",
+   "location": "cromwell",
+   "category": "Mental Health",
+   "description": "A free counselling programme placing trained counsellors in local schools to support students' wellbeing. For enrolled students, referred through the school, free.",
+   "website": "https://www.coreap.org.nz/schools"
+  },
+  {
+   "name": "Seasons for Growth",
+   "location": "cromwell",
+   "category": "Mental Health",
+   "description": "Child Programme: Builds knowledge and skills to strengthen the emotional wellbeing and resilience of children and young people following experiences of significant change and loss",
+   "website": "https://www.seasonsforgrowth.org.uk/"
+  },
+  {
+   "name": "Oranga Tamariki",
+   "location": "cromwell",
+   "category": "Family Support",
+   "description": "The government agency responsible for child welfare, working with young people and whānau where there are serious care or safety concerns. For children and young people needing protection, nationwide, free.",
+   "website": "https://www.orangatamariki.govt.nz/"
+  },
+  {
+   "name": "Central Otago REAP",
+   "location": "cromwell",
+   "category": "Education & Learning",
+   "description": "Facilitates educational opportunities that aim to empower and enrich the lives of the people in Central Otago.",
+   "website": "https://www.coreap.org.nz/"
+  },
+  {
+   "name": "Catholic Social Services",
+   "location": "cromwell",
+   "category": "Family Support",
+   "description": "We believe life is for living but sometimes things get in our way. We are here to help with a range of integrated services, and great people to help change that story and live life well.",
+   "website": "https://www.cathsocialservices.org.nz"
+  },
+  {
+   "name": "Strengthening Families",
+   "location": "cromwell",
+   "category": "Family Support",
+   "description": "The Strengthening Families process connects a whānau or family who require assistance from more than one agency or community service.",
+   "website": "https://www.strengtheningfamilies.govt.nz"
+  },
+  {
+   "name": "Able Minds",
+   "location": "cromwell",
+   "category": "Mental Health",
+   "description": "This programme is specifically designed for rangatahi (youth) aged from 12 -21 years who are affected by mental distress and/or addiction issues, or for young people who need general life coaching.",
+   "website": "https://www.able.org.nz"
+  },
+  {
+   "name": "PACT",
+   "location": "cromwell",
+   "category": "Mental Health",
+   "description": "It doesn’t matter why anyone needs our help, we have the skills and; experience to support people to lead fulfilling lives in the community.",
+   "website": "https://pactgroup.co.nz/"
+  },
+  {
+   "name": "Dyslexia Support South",
+   "location": "cromwell",
+   "category": "Neurodiversity Support",
+   "description": "Supporting parents and caregivers of children with specific learning differences",
+   "website": "https://www.dyslexiasupportsouth.org.nz/"
+  },
+  {
+   "name": "Goldfields Primary School",
+   "location": "cromwell",
+   "category": "Education & Learning",
+   "description": "A local primary school. [ADL/school to confirm any wellbeing or pastoral support offered, and how a family or student would access it.]",
+   "website": "https://goldfieldsschool.wordpress.com/"
+  },
+  {
+   "name": "Junction Health",
+   "location": "cromwell",
+   "category": "Health & Wellbeing",
+   "description": "A local general practice providing everyday medical care. For enrolled patients of all ages, usual GP visit fees apply.",
+   "website": "https://www.junctionhealth.co.nz/"
+  },
+  {
+   "name": "Cromwell Family Practice",
+   "location": "cromwell",
+   "category": "Health & Wellbeing",
+   "description": "A local general practice providing everyday medical care. For enrolled patients of all ages, usual GP visit fees apply.",
+   "website": "https://www.cromwellfamilypractice.co.nz/"
+  },
+  {
+   "name": "Family Works",
+   "location": "alexandra",
+   "category": "Family Support",
+   "description": "Our services include: Social work; Financial mentoring; Parenting support; Children’s programmes; Youth development; Foodbank; Emergency welfare response; Our services support: Tamariki, rangatahi and whānua (children, young people and families); Tangata…",
+   "website": "https://psotago.org.nz/contact/family-works/"
+  },
+  {
+   "name": "Stand Tū Māia",
+   "location": "alexandra",
+   "category": "Family Support",
+   "description": "Transformative support for tamariki mokopuna (aged 5-12) and their whānau. We provide specialised support that reduces life stressors, builds responsive relationships, strengthens self-regulation, and develops the brain’s core executive skills.",
+   "website": "https://standtumaia.nz/"
+  },
+  {
+   "name": "Awhi Atu Counsellors in Schools",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "A free counselling programme placing trained counsellors in local schools to support students' wellbeing. For enrolled students, referred through the school, free.",
+   "website": "https://www.coreap.org.nz/schools"
+  },
+  {
+   "name": "Seasons for Growth",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Child Programme: Builds knowledge and skills to strengthen the emotional wellbeing and resilience of children and young people following experiences of significant change and loss",
+   "website": "https://www.coreap.org.nz/schools"
+  },
+  {
+   "name": "Te Whatu Ora Southern Central Lakes Community Mental Health Service",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "The public mental health service for adults in the Central Lakes needing ongoing specialist support, accessed through a referral. For Central Lakes residents, free (public health service).",
+   "website": "https://healthpoint.co.nz/public/psychiatry/adult-community-mental-health-services-southern/"
+  },
+  {
+   "name": "Central Lakes Family Services",
+   "location": "alexandra",
+   "category": "Family Support",
+   "description": "We provide immediate support for domestic and family violence, sexual harm, and mental health.",
+   "website": "https://www.clfs.co.nz/"
+  },
+  {
+   "name": "Lemon Tree (bedwetting)",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "There are thousands of kids in NZ who wet the bed but bed wetting is largely a problem that doesn't have to exist.",
+   "website": "https://www.bedwetting.co.nz/"
+  },
+  {
+   "name": "Uruuruwhenua Hauora",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "We work alongside whānau and the wider community to ensure Health and Social Services are accessible and tailored to meet the needs of whānau so that good health and wellbeing is achieved.",
+   "website": "https://www.uruuruwhenuahealth.co.nz/"
+  },
+  {
+   "name": "Puna Rangatahi - Central Youth Development",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "We are a not-for-profit organisation, founded in 2011, supporting young people in Vincent Ward, Teviot Valley, and Māniatoto Valley.",
+   "website": "https://cydt.nz/"
+  },
+  {
+   "name": "Central Otago REAP",
+   "location": "alexandra",
+   "category": "Education & Learning",
+   "description": "Counselling support for student wellbeing within the school setting. Currently supporting a range of primary schools in the wider Alexandra area.",
+   "website": "https://www.coreap.org.nz/"
+  },
+  {
+   "name": "Able Minds",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "The RAW programme is based on the principles of Te Whare Tapa Wha model which strengthens our four walls of wellbeing: psychological health, spiritual health, physical health and family health.",
+   "website": "https://www.able.org.nz"
+  },
+  {
+   "name": "PACT",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "It doesn’t matter why anyone needs our help, we have the skills and; experience to support people to lead fulfilling lives in the community.",
+   "website": "https://pactgroup.co.nz/"
+  },
+  {
+   "name": "Salvation Army",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Advocacy and assistance with food, furniture and clothing is available from our Alexandra office. We can also provide emergency winter wood.",
+   "website": "https://www.salvationarmy.org.nz/corps/alexandra-corps/"
+  },
+  {
+   "name": "Catholic Social Services",
+   "location": "alexandra",
+   "category": "Family Support",
+   "description": "We believe life is for living but sometimes things get in our way. We are here to help with a range of integrated services, and great people to help change that story and live life well.",
+   "website": "https://www.cathsocialservices.org.nz"
+  },
+  {
+   "name": "Anglican Family Care",
+   "location": "alexandra",
+   "category": "Family Support",
+   "description": "Our services are available to whānau from a diverse range of backgrounds, aimed to restore their well-being and enhance their social resiliency.",
+   "website": "https://www.anglicanfamilycare.org.nz/region/central-otago-services"
+  },
+  {
+   "name": "Your Way - Kia Roha",
+   "location": "alexandra",
+   "category": "Neurodiversity Support",
+   "description": "We are committed to providing guidance and disability-related support tailored to your individual needs, working alongside you and your whānau every step of the way.",
+   "website": "https://www.yourwaykiaroha.nz/"
+  },
+  {
+   "name": "Parent to Parent",
+   "location": "alexandra",
+   "category": "Neurodiversity Support",
+   "description": "Often, having a disabled or neurodivergent family member is an experience that brings many new things to learn along the way. And we know it can be a challenging journey.",
+   "website": "https://parent2parent.org.nz/"
+  },
+  {
+   "name": "Central Otago Budgeting Advice",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Free, confidential budgeting and financial mentoring for people in Central Otago struggling to manage money or debt. For anyone in the area, free.",
+   "website": "https://ach.org.nz/"
+  },
+  {
+   "name": "After a Suicide",
+   "location": "alexandra",
+   "category": "Bereavement & Grief",
+   "description": "In this time of loss, we stand alongside you. This website offers compassionate support and practical information for whānau, friends, and communities who have been impacted by suicide.",
+   "website": "https://www.afterasuicide.nz/"
+  },
+  {
+   "name": "Flow Space Wellness",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "Nestled like an oasis away from the hustle bustle, we offer a unique blend of Massage Therapy and bodywork, Traditional Sauna & Cold Contrast, Breathwork, fitness and therapeutic Yoga and Meditation Classes, creating a sanctuary where your physical and…",
+   "website": "https://flowspaceyoga.com"
+  },
+  {
+   "name": "CCS Disability Action",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "We offer a broad range of support services for disabled people, family and whānau. What is right for you will depend on your stage of life, your needs and, most importantly, your aspirations.",
+   "website": "https://www.ccsdisabilityaction.org.nz"
+  },
+  {
+   "name": "Male Survivors Otago",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "We work with male survivors and their family/whanau to help them build happier and healthier lives. We offer support services that are founded on mutual trust and respect, are non-judgmental, focused on hope and recovery.",
+   "website": "https://www.tautokotane-southern.nz/"
+  },
+  {
+   "name": "Te Whatu Ora - advisory",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "A public mental health advisory and advocacy service offering information and support for people navigating mental health care. For anyone in New Zealand, free.",
+   "website": "https://www.healthnz.govt.nz/about-us/what-we-do/programmes-and-initiatives/mental-health-programmes/mental-health-advisory-and-advocacy-services"
+  },
+  {
+   "name": "Alexandra Community House",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Alexandra Community House is a warm and welcoming venue in Alexandra, providing a hub for community services where everyone is invited to join social groups, seek advice, volunteer, or donate, fostering a vibrant and inclusive community spirit.",
+   "website": "https://ach.org.nz"
+  },
+  {
+   "name": "Mayors Taskforce for Jobs",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Working with communities to get young people into sustainable employment. The Mayors Taskforce for Jobs provides support and funding to both young jobseekers and employers, helping to reduce barriers to employment.",
+   "website": "https://www.codc.govt.nz/services/economic-development/mayors-taskforce-for-jobs"
+  },
+  {
+   "name": "Brain Injury Association",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Here at Brain Injury Otago and Canterbury, our vision is to see individuals and whānau impacted by brain injury have the recognition and support to enable living life well.",
+   "website": "https://www.braininjuryotagocanterbury.org.nz/"
+  },
+  {
+   "name": "Central Otago RDA (Riding for the Disabled)",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "At New Zealand Riding for the Disabled, our core purpose is to provide interaction with horses to improve health and wellbeing outcomes for people experiencing disability, or who have specific challenges or needs.",
+   "website": "https://rda.org.nz/about-us/rda-groups/central-otago-alexandra"
+  },
+  {
+   "name": "Comcol",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Youth Service is a FREE NEET youth coaching service - we may be able to help you! providing wrap around support for young people; If you're 16-17 years old and not in education, training or employment; We give young people the guidance, practical support and…",
+   "website": "https://www.comcol.ac.nz/youth-service-ratonga-taiohi.html"
+  },
+  {
+   "name": "ADHD NZ",
+   "location": "alexandra",
+   "category": "Neurodiversity Support",
+   "description": "Welcome to ADHD New Zealand, where you're not alone. We're here to support you and your whānau with understanding, resources and a sense of community.",
+   "website": "https://www.adhd.org.nz/"
+  },
+  {
+   "name": "Journeys",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Adventuring together in our local wild places - Weekly sessions in the outdoors – a Summer season of Mountain Biking and a Winter season of On Foot Adventures.",
+   "website": "https://www.journeys.org.nz/"
+  },
+  {
+   "name": "The Terrace School",
+   "location": "alexandra",
+   "category": "Education & Learning",
+   "description": "A local primary school. [ADL/school to confirm any wellbeing or pastoral support offered, and how a family or student would access it.]",
+   "website": "https://www.theterrace.school.nz"
+  },
+  {
+   "name": "Alexandra Primary School",
+   "location": "alexandra",
+   "category": "Education & Learning",
+   "description": "A local primary school. [ADL/school to confirm any wellbeing or pastoral support offered, and how a family or student would access it.]",
+   "website": "https://www.alexprim.school.nz"
+  },
+  {
+   "name": "St Gerards School",
+   "location": "alexandra",
+   "category": "Education & Learning",
+   "description": "A local Catholic primary school. [ADL/school to confirm any wellbeing or pastoral support offered, and how a family or student would access it.]",
+   "website": "https://www.stgerards.school.nz"
+  },
+  {
+   "name": "Clyde Primary School",
+   "location": "alexandra",
+   "category": "Education & Learning",
+   "description": "A local primary school. [ADL/school to confirm any wellbeing or pastoral support offered, and how a family or student would access it.]",
+   "website": "https://www.clyde.school.nz"
+  },
+  {
+   "name": "Te Kura",
+   "location": "alexandra",
+   "category": "Education & Learning",
+   "description": "The Correspondence School, offering distance education for students who can't attend a regular school. For eligible students nationwide, free for school-aged students.",
+   "website": "https://www.tekura.school.nz"
+  },
+  {
+   "name": "Dunstan High School",
+   "location": "alexandra",
+   "category": "Education & Learning",
+   "description": "A local secondary school. [ADL/school to confirm any wellbeing or pastoral support offered, and how a family or student would access it.]",
+   "website": "https://www.dunstan.school.nz"
+  },
+  {
+   "name": "Alexandra Family Medical",
+   "location": "alexandra",
+   "category": "Health & Wellbeing",
+   "description": "A local general practice providing everyday medical care. For enrolled patients of all ages, usual GP visit fees apply.",
+   "website": "https://www.alexfamilymed.co.nz"
+  },
+  {
+   "name": "Central Otago Psychology",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "With our lives becoming increasingly busy and often juggling several competing demands, it is not surprising that all of us have moments when we find it difficult to cope with daily life. But you don't have to continue to struggle.",
+   "website": "https://centralotagopsychology.co.nz/"
+  },
+  {
+   "name": "Counsellors and Therapists Directory",
+   "location": "alexandra",
+   "category": "Mental Health",
+   "description": "An online directory to search for private counsellors and therapists by location. For anyone in Alexandra, [ADL to confirm typical cost, since these are private practitioners].",
+   "website": "https://www.psychologytoday.com/nz/counselling/ot/alexandra"
+  },
+  {
+   "name": "JR McKenzie Youth Education Fund",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "The Fund wishes to help where death, sickness, family break up or economic hardship cause difficulty for young people and their caregivers to meet the costs of their education.",
+   "website": "https://www.youtheducationfund.org.nz/"
+  },
+  {
+   "name": "Central Otago Resilience Trust",
+   "location": "alexandra",
+   "category": "Community Resources",
+   "description": "Providing support for people in our community in need who have to travel away from home for medical treatment.",
+   "website": "https://www.cortrust.co.nz/"
+  }
+ ],
+ "resources": [
+  {
+   "name": "Allright",
+   "category": "Health & Wellbeing",
+   "description": "A national campaign with free tools, articles and two apps to help young people and whānau look after their wellbeing day to day. For anyone in New Zealand, free.",
+   "website": "https://www.allright.org.nz/"
+  },
+  {
+   "name": "The Lowdown",
+   "category": "Mental Health",
+   "description": "A website and helpline for young people who may be experiencing depression or anxiety, with real stories, self-help tools and 24/7 support by text, email or webchat. For young people (rangatahi) across New Zealand, free.",
+   "website": "https://www.thelowdown.co.nz/"
+  },
+  {
+   "name": "Anxiety NZ",
+   "category": "Mental Health",
+   "description": "Information, self-help resources and a helpline for people experiencing anxiety. For anyone in New Zealand, free to access online (helpline call costs may apply).",
+   "website": "https://www.anxiety.org.nz/"
+  },
+  {
+   "name": "Depression.org.nz",
+   "category": "Mental Health",
+   "description": "Government-run information and self-help tools for depression and anxiety, including a free helpline and text service. For anyone in New Zealand, free.",
+   "website": "https://www.depression.org.nz/"
+  },
+  {
+   "name": "OUTLine NZ",
+   "category": "Community Resources",
+   "description": "A helpline and peer support service for rainbow (LGBTQIA+) young people, adults and their whānau. For anyone in New Zealand, free.",
+   "website": "https://www.outline.org.nz/"
+  },
+  {
+   "name": "Are You OK",
+   "category": "Family Support",
+   "description": "Information and a directory of services for people affected by family harm or intimate partner violence, including how to get help safely. For anyone in New Zealand, free.",
+   "website": "https://www.areyouok.org.nz/"
+  },
+  {
+   "name": "Alcohol Drug Helpline",
+   "category": "Mental Health",
+   "description": "A free, confidential helpline for anyone concerned about their own or someone else's alcohol or other drug use. Available 24/7 across New Zealand, free.",
+   "website": "https://www.alcoholdrughelp.org.nz/"
+  },
+  {
+   "name": "Central Otago Resilience Trust",
+   "category": "Health & Wellbeing",
+   "description": "Funding support to help Central Otago families access mental health and wellbeing services. [ADL to confirm exact eligibility and how to apply.]",
+   "website": "https://www.cortrust.co.nz/"
+  },
+  {
+   "name": "Upper Clutha Children's Medical Trust",
+   "category": "Health & Wellbeing",
+   "description": "Funding support for children's health costs in the Upper Clutha area. [ADL to confirm exact eligibility and how to apply.]",
+   "website": "https://www.uccmedtrust.co.nz/"
+  },
+  {
+   "name": "Food for Love",
+   "category": "Community Resources",
+   "description": "Homemade meals delivered to people in the Wānaka area who are going through a hard time. [ADL to confirm current referral process and cost, if any.]",
+   "website": "https://foodforlovewanaka.com/"
+  },
+  {
+   "name": "Baskets of Blessing",
+   "category": "Community Resources",
+   "description": "Homemade meals and support delivered to people in need. [ADL to confirm coverage area and referral process.]",
+   "website": "https://www.basketsofblessing.co.nz/meals/"
+  },
+  {
+   "name": "GBB",
+   "category": "Community Resources",
+   "description": "A local group providing baking and food support to the community. [ADL to confirm full name, area covered and how to access.]",
+   "website": "https://gbb.org.nz/"
+  },
+  {
+   "name": "Aoake te Rā",
+   "category": "Bereavement & Grief",
+   "description": "Free, kaupapa Māori postvention support for whānau and communities bereaved by suicide. For people across New Zealand, free.",
+   "website": "https://www.aoaketera.org.nz/"
+  },
+  {
+   "name": "Te Rau Ora",
+   "category": "Bereavement & Grief",
+   "description": "A Māori health organisation offering suicide bereavement (postvention) support and wider whānau wellbeing services. For people across New Zealand, free.",
+   "website": "https://terauora.com/"
+  },
+  {
+   "name": "Central Otago REAP",
+   "category": "Education & Learning",
+   "description": "Community and adult education courses, including driver licensing support (Drive My Life) for the Central Otago area. [ADL to confirm cost and eligibility.]",
+   "website": "https://www.coreap.org.nz/"
+  },
+  {
+   "name": "WellSouth",
+   "category": "Bereavement & Grief",
+   "description": "The primary health network for the lower South Island; this listing links to their bereavement-by-suicide support information. [ADL to confirm which specific service/page this should point to.]",
+   "website": "https://wellsouth.nz/your-health/mental-health-and-wellbeing/suicide-prevention"
+  },
+  {
+   "name": "CanTeen Aotearoa",
+   "category": "Health & Wellbeing",
+   "description": "Support for Rangatahi effected by cancer",
+   "website": "https://canteen.org.nz/"
+  },
+  {
+   "name": "Dyslexia Support South",
+   "category": "Neurodiversity Support",
+   "description": "Support and information for families and learners affected by dyslexia in the southern region. [ADL to confirm cost and referral process.]",
+   "website": "https://www.dyslexiasupportsouth.org.nz/"
+  },
+  {
+   "name": "Voices of Hope",
+   "category": "Mental Health",
+   "description": "Sharing hope though the voices of those with mental health lived experience",
+   "website": "https://thevoicesofhope.org/"
+  },
+  {
+   "name": "Youthlaw",
+   "category": "Youth Support",
+   "description": "Free legal help for children and young people throughout Aotearoa",
+   "website": "https://youthlaw.co.nz/"
+  },
+  {
+   "name": "EDANZ",
+   "category": "Mental Health",
+   "description": "Eating Disorder - support, resources, run by lived experience parents, caregivers and people",
+   "website": "https://www.ed.org.nz/"
+  },
+  {
+   "name": "Parent Help",
+   "category": "Family Support",
+   "description": "A free, confidential helpline for parents and caregivers needing support or someone to talk to about parenting. Available nationwide, free.",
+   "website": "https://www.parenthelp.org.nz/"
+  },
+  {
+   "name": "Shine",
+   "category": "Family Support",
+   "description": "Support, advocacy and a helpline for people affected by family harm or intimate partner violence. Available nationwide, free.",
+   "website": "https://2shine.org.nz/"
+  }
+ ],
+ "helplines": [
+  {
+   "name": "1737",
+   "number": "Call or text 1737",
+   "note": "24/7 support"
+  },
+  {
+   "name": "Anxiety NZ",
+   "number": "0800 269 4389",
+   "note": "Anxiety support"
+  },
+  {
+   "name": "Depression Helpline",
+   "number": "0800 111 757 or text 4202",
+   "note": "24/7"
+  },
+  {
+   "name": "Youthline",
+   "number": "0800 37 66 33 or text 234",
+   "note": "24/7 youth"
+  },
+  {
+   "name": "DHB Crisis (Southern)",
+   "number": "0800 46 78 46",
+   "note": "Queenstown emergency. Press 1 if you live in Queenstown - press 2 if you live in Central Otago"
+  },
+  {
+   "name": "Lifeline",
+   "number": "0800 543 354 or text 4357",
+   "note": ""
+  },
+  {
+   "name": "Suicide Crisis Helpline",
+   "number": "0508 828 865",
+   "note": ""
+  },
+  {
+   "name": "0800 What's up",
+   "number": "0800 942 8787",
+   "note": "11am-11pm - youth"
+  },
+  {
+   "name": "Are you ok?",
+   "number": "0800 456 450",
+   "note": "24/7 - IPV/family harm support"
+  },
+  {
+   "name": "Alcohol & drug helpline",
+   "number": "0800 787 797",
+   "note": ""
+  }
+ ]
+}
